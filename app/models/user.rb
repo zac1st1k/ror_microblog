@@ -32,6 +32,7 @@ class User < ActiveRecord::Base
 
   # if token and digest match, return true
   def authenticated?(remember_token)
+    return false if remember_digest.nil?
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
