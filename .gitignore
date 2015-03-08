@@ -16,5 +16,5 @@
 !/log/.keep
 /tmp
 
-# Ignore all uploaded iamges.
-/public/uploads/micropost/picture
+# Ignore uploaded test images.
+/public/uploads
